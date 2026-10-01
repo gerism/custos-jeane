@@ -1,0 +1,66 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #FAF4EE;
+  color: #2B1F17;
+}
+button { font-family: inherit; cursor: pointer; }
+input, select { font-family: inherit; }
+
+.btn-primario {
+  border: none;
+  background: #B5572B;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 0;
+  border-radius: 12px;
+}
+.btn-secundario {
+  border: 1px solid #D8C4B3;
+  background: transparent;
+  color: #2B1F17;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+.cartao {
+  background: #FFFFFF;
+  border: 1px solid #EEE1D4;
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.campo { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.campo label { font-size: 13px; color: #9C7F68; }
+.campo input, .campo select {
+  border: 1px solid #E3D2C1;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: #2B1F17;
+}
+
+.erro { color: #B4432E; font-size: 14px; margin-top: 8px; }
+.sucesso { color: #3F7D4F; font-size: 14px; margin-top: 8px; }
+.ganho { color: #3F7D4F; }
+.perda { color: #B4432E; }
+
+.abas { display: flex; gap: 6px; overflow-x: auto; margin-bottom: 18px; padding-bottom: 2px; }
+.aba-botao {
+  border: none;
+  background: #EEE1D4;
+  color: #6E5844;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+.aba-botao.ativa { background: #B5572B; color: #FFFFFF; }
+.aba { display: none; }
+.aba.ativa { display: block; }

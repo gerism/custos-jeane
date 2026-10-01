@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custos da Confeitaria — Entrar</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px;">
+    <form id="form-login" class="cartao" style="width: 100%; max-width: 340px;">
+      <h1 style="font-size: 20px; margin: 0 0 20px;">Custos da Confeitaria</h1>
+
+      <div class="campo">
+        <label for="usuario">Usuário</label>
+        <input id="usuario" name="usuario" type="text" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required>
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <div style="position: relative; display: flex;">
+          <input id="senha" name="senha" type="password" autocomplete="current-password" autocapitalize="none" autocorrect="off" spellcheck="false" required style="flex: 1; padding-right: 44px;">
+          <button type="button" id="btn-ver-senha" aria-label="Mostrar senha" aria-pressed="false" style="position: absolute; right: 6px; top: 50%; transform: translateY(-50%); border: none; background: transparent; padding: 6px; display: flex; align-items: center; color: #9C7F68;">
+            <svg id="icone-olho" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-primario" style="width: 100%;">Entrar</button>
+      <div id="mensagem-erro" class="erro"></div>
+    </form>
+  </div>
+
+  <script src="/js/login.js"></script>
+</body>
+</html>
